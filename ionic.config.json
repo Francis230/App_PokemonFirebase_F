@@ -1,0 +1,7 @@
+{
+  "name": "PokeAppFirebaseFR",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
