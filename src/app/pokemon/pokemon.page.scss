@@ -1,0 +1,122 @@
+ion-content {
+  --background: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.search-box {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.search-input {
+  --background: #2a2a2a;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+ion-button {
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.list-title {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #fcd34d;
+}
+
+.pokemon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.pokemon-card {
+  width: 180px;
+  background: #1e1e1e;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+}
+
+.pokemon-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+.pokemon-card img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin: 10px auto 0;
+}
+
+ion-card-title {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+
+/* MODAL ESTILIZADO */
+.modal-content {
+  --background: #1e1e1e;
+}
+
+.modal-box {
+  background: #252525;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.modal-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fcd34d;
+  margin-bottom: 10px;
+}
+
+.modal-image {
+  width: 150px;
+  margin: 0 auto 20px;
+}
+
+.modal-info p {
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+.modal-opinion {
+  margin: 20px 0;
+  --background: #2a2a2a;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+}

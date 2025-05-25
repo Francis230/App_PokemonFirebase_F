@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title class="title">Pokédex Legendaria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="dark">
+  <div class="search-box">
+    <ion-input [(ngModel)]="name" placeholder="Buscar Pokémon" class="search-input"></ion-input>
+    <ion-button expand="block" color="warning" (click)="buscarPokemon()">Buscar</ion-button>
+  </div>
+
+  <div class="list-title">Pokémon Destacados</div>
+
+  <div class="pokemon-grid">
+    <ion-card *ngFor="let p of pokemonList" class="pokemon-card" (click)="mostrarDetalles(p)">
+      <img [src]="p.image" />
+      <ion-card-header>
+        <ion-card-title>{{ p.name | titlecase }}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
+
+  <!-- POP-UP ESTILIZADO -->
+  <ion-modal [isOpen]="showModal" (didDismiss)="showModal = false">
+    <ng-template>
+      <ion-content class="ion-padding modal-content">
+        <div class="modal-box" *ngIf="pokemon">
+          <h2 class="modal-title">{{ pokemon.name | titlecase }}</h2>
+          <img [src]="pokemon.sprites.front_default" class="modal-image" />
+          
+          <div class="modal-info">
+            <p><strong>Altura:</strong> {{ pokemon.height }}</p>
+            <p><strong>Peso:</strong> {{ pokemon.weight }}</p>
+            <p><strong>Tipos:</strong> <span *ngFor="let tipo of pokemon.types">{{ tipo.type.name }} </span></p>
+            <p><strong>Habilidades:</strong> <span *ngFor="let hab of pokemon.abilities">{{ hab.ability.name }} </span></p>
+          </div>
+
+          <ion-input
+            type="text"
+            [(ngModel)]="opinion"
+            placeholder="¿Qué opinas de este Pokémon?"
+            class="modal-opinion"
+          ></ion-input>
+
+          <ion-button color="success" expand="block" (click)="guardarPokemon()">Guardar Reseña</ion-button>
+          <ion-button color="medium" expand="block" (click)="showModal = false">Cerrar</ion-button>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>
+
+
+
+
