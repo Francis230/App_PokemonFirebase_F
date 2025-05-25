@@ -191,16 +191,26 @@ Se guarda cada reseña con esta estructura:
 
 > Pagina Inicio
 ![Imagen de WhatsApp 2025-05-25 a las 15 15 07_ee2ddd30](https://github.com/user-attachments/assets/7f2cae32-1eb4-454f-9bdf-436fef2937b1)
+
+---
+
 > Barra Busqueda - Nombre Pokemon
 ![Imagen de WhatsApp 2025-05-25 a las 15 15 07_d453acfa](https://github.com/user-attachments/assets/42e1a05f-3537-46e3-b6de-aa4ec989edb0)
+
+---
+
 > Caracteristicas Pokemon
 ![Imagen de WhatsApp 2025-05-25 a las 15 15 07_4cc764e0](https://github.com/user-attachments/assets/5d619fcd-7b0d-46aa-9021-26acf453b76c)
+
+---
+
 > Reseña
 ![Imagen de WhatsApp 2025-05-25 a las 15 15 08_d690f106](https://github.com/user-attachments/assets/510dec35-6644-4a3e-96d9-b4f42884712c)
+
+---
+
 > Guardado de reseña
 ![Imagen de WhatsApp 2025-05-25 a las 15 15 08_0f3d467d](https://github.com/user-attachments/assets/8dded566-648b-48a0-9b90-68a4329d283c)
-
-
 
 
 ---
