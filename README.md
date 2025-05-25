@@ -1,4 +1,4 @@
----
+
 
 ````markdown
 # 📱 Pokédex Legendaria - Aplicación Móvil con Ionic + Firebase
