@@ -211,7 +211,5 @@ Se guarda cada reseña con esta estructura:
 
 ---
 
-¡Haz que tu Pokédex sea única con tus propias reseñas! 🧡
 
-```
 
